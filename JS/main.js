@@ -129,6 +129,8 @@ btnLimpiar.addEventListener('click', _ =>{
     ip.value = '';
     mascara.value = '';
     subredes.value = '';
+    btnBuscar.setAttribute("disabled", "");
+    btnCalcular.setAttribute("disabled", "");
 
     location.reload();
 })
