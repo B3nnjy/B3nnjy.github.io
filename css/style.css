@@ -46,7 +46,11 @@ main{
     overflow: hidden;
 }
 
-#subir:hover{
+#subir > div{
+    width: 45px;
+}
+
+#subir > div:hover{
     cursor: pointer;
 }
 

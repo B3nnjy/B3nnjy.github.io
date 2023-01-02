@@ -12,13 +12,13 @@ const btnSubir = document.getElementById('subir');
 
 window.addEventListener('scroll', (e) => {
     if(window.scrollY >= 2000){
-        btnSubir.style.display = 'block';
+        btnSubir.style.display = 'flex';
     }else{
         btnSubir.style.display = 'none';
     }
 })
 
-btnSubir.addEventListener('click', (e) => {
+btnSubir.children[0].addEventListener('click', (e) => {
     window.scroll(0, 0);
 })
 
