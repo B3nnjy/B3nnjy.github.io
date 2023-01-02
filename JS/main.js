@@ -125,15 +125,7 @@ btnCalcular.addEventListener('click', (e) => {
         sprite.remove();
 
         contenido.appendChild(showSubredes(red));
-        contenido.style.display = 'flex';
-    
-        console.log("IP", red.Ip);
-        console.log("Mascara", red.decimalMask);
-        console.log(`Mascara binario ${red.binaryMask[0].join('')}.${red.binaryMask[1].join('')}.${red.binaryMask[2].join('')}.${red.binaryMask[3].join('')}`);
-        console.log("Subredes", red.numSubRed);
-        console.log("Hosts", red.numHosts);
-        console.log("Saltos", red.saltos);
-        console.log("SubRed", red.subRedes);        
+        contenido.style.display = 'flex';    
     }else{return}
 });
 
