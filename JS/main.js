@@ -11,7 +11,6 @@ const btnSubir = document.getElementById('subir');
 
 
 window.addEventListener('scroll', (e) => {
-    console.log(window.scrollY);
     if(window.scrollY >= 2000){
         btnSubir.style.display = 'block';
     }else{
@@ -22,8 +21,6 @@ window.addEventListener('scroll', (e) => {
 btnSubir.addEventListener('click', (e) => {
     window.scroll(0, 0);
 })
-
-
 
 ip.addEventListener('keydown', (e) => {
     if(isNaN(e.key) && e.key != '.' && e.key != "Backspace" && e.key != "ArrowLeft" && e.key != "ArrowRight" && e.key != "Tab"){
@@ -94,7 +91,6 @@ btnBuscar.addEventListener('click', (e) => {
 
         contenido.appendChild(showBusqueda(red));
         contenido.addEventListener('load', () => {
-            console.log("load");
         })
 
     }else{
